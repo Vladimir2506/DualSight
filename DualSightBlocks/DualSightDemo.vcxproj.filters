@@ -15,22 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="DualSightBlocks.ino" />
+    <None Include="DualSightDemo.ino" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="__vm\.DualSightBlocks.vsarduino.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Stuff.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MainLogic.h">
+    <ClInclude Include="__vm\.DualSightDemo.vsarduino.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Monitor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Coord.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="MyRocker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainLogic.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Object.h">
