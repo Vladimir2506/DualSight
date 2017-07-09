@@ -58,7 +58,7 @@ private:
 	}
 	void RoundStart()
 	{
-		Coord<int> pointBorn(5, 14);
+		Coord<int> pointBorn(3, 14);
 		CCreator CreateBlock;
 		pBlock = new Object(CreateBlock(pointBorn));
 	}
@@ -146,16 +146,17 @@ private:
 		bool bFlag = false;
 		for (int y = 0; y < 16; ++y)
 		{
+			int cnt = 0;
 			for (int x = 0; x < 8; ++x)
 			{
-				if (!MapData[x][y])
+				if (MapData[x][y])
 				{
-					break;
+					++cnt;
 				}
-				else if(MapData[7][y])
-				{
-					bFlag = true;
-				}
+			}
+			if (cnt == 8)
+			{
+				bFlag = true;
 			}
 			if (bFlag)
 			{
